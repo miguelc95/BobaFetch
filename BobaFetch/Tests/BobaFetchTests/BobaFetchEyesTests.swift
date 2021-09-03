@@ -17,7 +17,7 @@ class BobaFetchEyesTests: XCTestCase {
                 XCTAssertEqual(eyes.count, 5)
                 XCTAssertEqual(eyes.first?.eyeColor, "blue")
             case .failure(let error):
-                XCTAssertEqual("Error", error.localizedDescription)
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving eyes error 404.)")
             }
         }
     }
@@ -29,7 +29,7 @@ class BobaFetchEyesTests: XCTestCase {
                 XCTAssertEqual(eyes.count, 10)
                 XCTAssertEqual(eyes.last?.eyeColor, "blue-gray")
             case .failure(let error):
-                XCTAssertEqual("Error", error.localizedDescription)
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving eyes error 404.)")
             }
         }
     }

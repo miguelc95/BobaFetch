@@ -19,7 +19,7 @@ class BobaFetchPlanetsTests: XCTestCase {
                 XCTAssertEqual(planets.first?.population, "200000")
 
             case .failure(let error):
-                XCTAssertEqual("Error", error.localizedDescription)
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving planets error 404.)")
             }
         }
     }
@@ -33,7 +33,7 @@ class BobaFetchPlanetsTests: XCTestCase {
                 XCTAssertEqual(planets.last?.population, "1000000000")
                 XCTAssertEqual(planets.last?.climate, "temperate")
             case .failure(let error):
-                XCTAssertEqual("Error", error.localizedDescription)
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving planets error 404.)")
             }
         }
     }
