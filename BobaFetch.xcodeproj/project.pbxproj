@@ -31,6 +31,7 @@
 		3194A61926E1D0460071E638 /* BobaFetchPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A61626E1D0460071E638 /* BobaFetchPlanetsTests.swift */; };
 		3194A61D26E1D1200071E638 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A61A26E1D0EF0071E638 /* Extensions.swift */; };
 		3194A61E26E1D2280071E638 /* BobaFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* BobaFetch.swift */; };
+		3194A62F26E1DCD10071E638 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A60826E1CFA40071E638 /* Eyes.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_43 /* BobaFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "BobaFetch::BobaFetch::Product" /* BobaFetch.framework */; };
 /* End PBXBuildFile section */
@@ -334,6 +335,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_30 /* Package.swift in Sources */,
+				3194A62F26E1DCD10071E638 /* Eyes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
