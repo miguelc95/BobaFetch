@@ -84,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				3194A56426E1971C0071E638 /* BobaFetch */,
-				3194A5A826E19BFE0071E638 /* DemoApp */,
-				3194A56F26E1971C0071E638 /* BobaFetchTests */,
 				3194A56326E1971C0071E638 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,13 +100,9 @@
 		3194A56426E1971C0071E638 /* BobaFetch */ = {
 			isa = PBXGroup;
 			children = (
-				3194A5BD26E1B79B0071E638 /* SampleJsons */,
-				3194A58126E1992A0071E638 /* Service */,
-				3194A57E26E1986C0071E638 /* Workers */,
-				3194A57C26E198520071E638 /* Models */,
-				3194A58626E199C80071E638 /* BobaFetcher.swift */,
-				3194A56526E1971C0071E638 /* BobaFetch.h */,
-				3194A56626E1971C0071E638 /* Info.plist */,
+				3194A5C926E1C8330071E638 /* Tests */,
+				3194A5C826E1C8110071E638 /* Source */,
+				3194A5A826E19BFE0071E638 /* DemoApp */,
 			);
 			path = BobaFetch;
 			sourceTree = "<group>";
@@ -174,6 +168,28 @@
 				3194A5C226E1C3F30071E638 /* Planets.json */,
 			);
 			path = SampleJsons;
+			sourceTree = "<group>";
+		};
+		3194A5C826E1C8110071E638 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3194A58626E199C80071E638 /* BobaFetcher.swift */,
+				3194A56526E1971C0071E638 /* BobaFetch.h */,
+				3194A56626E1971C0071E638 /* Info.plist */,
+				3194A57C26E198520071E638 /* Models */,
+				3194A57E26E1986C0071E638 /* Workers */,
+				3194A58126E1992A0071E638 /* Service */,
+				3194A5BD26E1B79B0071E638 /* SampleJsons */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3194A5C926E1C8330071E638 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3194A56F26E1971C0071E638 /* BobaFetchTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,7 +482,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BobaFetch/Info.plist;
+				INFOPLIST_FILE = BobaFetch/Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -492,7 +508,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BobaFetch/Info.plist;
+				INFOPLIST_FILE = BobaFetch/Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
