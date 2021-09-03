@@ -21,7 +21,7 @@ extension Dictionary {
 
 extension CharacterSet {
     static let urlQueryValueAllowed: CharacterSet = {
-        let generalDelimitersToEncode = ":#[]@" // does not include "?" or "/" due to RFC 3986 - Section 3.4
+        let generalDelimitersToEncode = ":#[]@"
         let subDelimitersToEncode = "!$&'()*+,;="
 
         var allowed = CharacterSet.urlQueryAllowed
@@ -49,7 +49,7 @@ class Network {
             Method: \(method.rawValue) \n
             """)
             
-        if let url = URL(string: fileLocation.rawValue.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") {
+        if let url = URL(string: fileLocation.endpoint.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") {
             var request = URLRequest(url: url)
             
             request.httpMethod = method.rawValue

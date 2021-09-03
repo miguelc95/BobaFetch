@@ -14,6 +14,8 @@
 		3194A58326E1993A0071E638 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58226E1993A0071E638 /* Endpoints.swift */; };
 		3194A58526E1999B0071E638 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58426E1999B0071E638 /* Eyes.swift */; };
 		3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58626E199C80071E638 /* BobaFetcher.swift */; };
+		3194A5BA26E1A9720071E638 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5B926E1A9720071E638 /* Planets.swift */; };
+		3194A5BC26E1AC060071E638 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5BB26E1AC060071E638 /* Films.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		3194A58426E1999B0071E638 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
 		3194A58626E199C80071E638 /* BobaFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetcher.swift; sourceTree = "<group>"; };
 		3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BobaFetchDemoApp.xcodeproj; sourceTree = "<group>"; };
+		3194A5B926E1A9720071E638 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		3194A5BB26E1AC060071E638 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				3194A58426E1999B0071E638 /* Eyes.swift */,
+				3194A5B926E1A9720071E638 /* Planets.swift */,
+				3194A5BB26E1AC060071E638 /* Films.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3194A58526E1999B0071E638 /* Eyes.swift in Sources */,
+				3194A5BC26E1AC060071E638 /* Films.swift in Sources */,
+				3194A5BA26E1A9720071E638 /* Planets.swift in Sources */,
 				3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */,
 				3194A58326E1993A0071E638 /* Endpoints.swift in Sources */,
 				3194A58026E198870071E638 /* Networking.swift in Sources */,
