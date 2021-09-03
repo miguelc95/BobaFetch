@@ -10,6 +10,10 @@
 		3194A56C26E1971C0071E638 /* BobaFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3194A56226E1971C0071E638 /* BobaFetch.framework */; };
 		3194A57126E1971C0071E638 /* BobaFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57026E1971C0071E638 /* BobaFetchTests.swift */; };
 		3194A57326E1971C0071E638 /* BobaFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3194A56526E1971C0071E638 /* BobaFetch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3194A58026E198870071E638 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57F26E198870071E638 /* Networking.swift */; };
+		3194A58326E1993A0071E638 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58226E1993A0071E638 /* Endpoints.swift */; };
+		3194A58526E1999B0071E638 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58426E1999B0071E638 /* Eyes.swift */; };
+		3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58626E199C80071E638 /* BobaFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,6 +24,13 @@
 			remoteGlobalIDString = 3194A56126E1971C0071E638;
 			remoteInfo = BobaFetch;
 		};
+		3194A5AE26E19C290071E638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3194A59126E19BE70071E638;
+			remoteInfo = BobaFetchDemoApp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,11 @@
 		3194A56B26E1971C0071E638 /* BobaFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BobaFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3194A57026E1971C0071E638 /* BobaFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchTests.swift; sourceTree = "<group>"; };
 		3194A57226E1971C0071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3194A57F26E198870071E638 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		3194A58226E1993A0071E638 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		3194A58426E1999B0071E638 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
+		3194A58626E199C80071E638 /* BobaFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetcher.swift; sourceTree = "<group>"; };
+		3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BobaFetchDemoApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +87,11 @@
 		3194A56426E1971C0071E638 /* BobaFetch */ = {
 			isa = PBXGroup;
 			children = (
+				3194A5A826E19BFE0071E638 /* DemoApp */,
+				3194A58126E1992A0071E638 /* Service */,
+				3194A57E26E1986C0071E638 /* Workers */,
+				3194A57C26E198520071E638 /* Models */,
+				3194A58626E199C80071E638 /* BobaFetcher.swift */,
 				3194A56526E1971C0071E638 /* BobaFetch.h */,
 				3194A56626E1971C0071E638 /* Info.plist */,
 			);
@@ -84,6 +105,46 @@
 				3194A57226E1971C0071E638 /* Info.plist */,
 			);
 			path = BobaFetchTests;
+			sourceTree = "<group>";
+		};
+		3194A57C26E198520071E638 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3194A58426E1999B0071E638 /* Eyes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3194A57E26E1986C0071E638 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				3194A57F26E198870071E638 /* Networking.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		3194A58126E1992A0071E638 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3194A58226E1993A0071E638 /* Endpoints.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3194A5A826E19BFE0071E638 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		3194A5AB26E19C290071E638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3194A5AF26E19C290071E638 /* BobaFetchDemoApp.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +208,7 @@
 				TargetAttributes = {
 					3194A56126E1971C0071E638 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					3194A56A26E1971C0071E638 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -164,6 +226,12 @@
 			mainGroup = 3194A55826E1971C0071E638;
 			productRefGroup = 3194A56326E1971C0071E638 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3194A5AB26E19C290071E638 /* Products */;
+					ProjectRef = 3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3194A56126E1971C0071E638 /* BobaFetch */,
@@ -171,6 +239,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3194A5AF26E19C290071E638 /* BobaFetchDemoApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BobaFetchDemoApp.app;
+			remoteRef = 3194A5AE26E19C290071E638 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3194A56026E1971C0071E638 /* Resources */ = {
@@ -194,6 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3194A58526E1999B0071E638 /* Eyes.swift in Sources */,
+				3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */,
+				3194A58326E1993A0071E638 /* Endpoints.swift in Sources */,
+				3194A58026E198870071E638 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +423,7 @@
 		3194A57726E1971C0071E638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 764CCJ2LYX;
@@ -357,6 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc.BobaFetch;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +449,7 @@
 		3194A57826E1971C0071E638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 764CCJ2LYX;
@@ -389,6 +474,7 @@
 		3194A57A26E1971C0071E638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764CCJ2LYX;
 				INFOPLIST_FILE = BobaFetchTests/Info.plist;
@@ -407,6 +493,7 @@
 		3194A57B26E1971C0071E638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 764CCJ2LYX;
 				INFOPLIST_FILE = BobaFetchTests/Info.plist;
