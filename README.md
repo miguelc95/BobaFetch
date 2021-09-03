@@ -1,6 +1,6 @@
 # BobaFetch
 
-This SDK which may be consumed with SPM by adding this [URL](https://github.com/miguelc95/BobaFetch) and selecting the development branch.
+This SDK which is available for everyone with SPM by adding this [URL](https://github.com/miguelc95/BobaFetch) and selecting the development branch.
 
 <img width="479" alt="Captura de Pantalla 2021-09-03 a la(s) 16 20 33" src="https://user-images.githubusercontent.com/15070387/132066345-2af8cbaa-36c2-413f-839a-533b04816c56.png">
 
