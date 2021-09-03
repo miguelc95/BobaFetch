@@ -12,9 +12,13 @@ struct PeopleRequest: Codable {
 }
 
 public struct Eyes: Codable {
-   public let eyeColor: String
+    public let eyeColor: String
+    public let name: String
+    
     
     enum CodingKeys: String, CodingKey {
         case eyeColor = "eye_color"
+        case name
+        
     }
 }
