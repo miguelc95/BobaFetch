@@ -12,7 +12,7 @@ class DemoViewController: UIViewController {
     
     @IBOutlet weak var searchTxtField: UITextField!
     var activityIndicator = UIActivityIndicatorView(style: .large)
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -33,8 +33,8 @@ class DemoViewController: UIViewController {
             switch eyesRequest {
             case .failure(let error):
                 self?.displayResponse(message: error.localizedDescription, title: "Error")            case .success(let eyes):
-                print(eyes)
-                self?.displayResponse(message: eyes.description, title: "Eyes")
+                    print(eyes)
+                    self?.displayResponse(message: eyes.description, title: "Eyes")
             }
         }
     }
@@ -45,8 +45,9 @@ class DemoViewController: UIViewController {
             self?.activityIndicator.stopAnimating()
             switch planetsRequest {
             case .failure(let error):
-                self?.displayResponse(message: error.localizedDescription, title: "Error")            case .success(let planets):
-                self?.displayResponse(message: planets.description, title: "Planets")
+                self?.displayResponse(message: error.localizedDescription, title: "Error")
+            case .success(let planets):
+                    self?.displayResponse(message: planets.description, title: "Planets")
             }
         }
     }
