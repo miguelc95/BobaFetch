@@ -67,6 +67,8 @@ BobaFetcher prints a summary of a request in the console:
 <img width="741" alt="Captura de Pantalla 2021-09-03 a la(s) 16 40 03" src="https://user-images.githubusercontent.com/15070387/132067769-4744ac96-cf6d-42b5-8a67-df419902edbb.png">
 
 
+This package was built using only Swift and no external dependencies or SDK's where added to keep it lightweight and avoid updating issues.
+
 
 TODOs: 
 
