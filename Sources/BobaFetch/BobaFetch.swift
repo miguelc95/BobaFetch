@@ -18,7 +18,8 @@ public class BobbaFetcher {
     public static func getPlanets(limit: Int = 5,search: String? = nil, sample:Bool = false, completion: @escaping (Swift.Result<[Planet], Error>) -> Void) {
         Network.getExternalData(fileLocation: .planets(search)) { (planetsRequest: PlanetsRequest?, error) in
             if let planets = planetsRequest?.results {
-                let filteredPlanets = planets.count > limit ? Array(planets[0..<limit]) : planets
+                let populationPlanets = planets.filter { $0.population != "unknown" }
+                let filteredPlanets = populationPlanets.count > limit ? Array(populationPlanets[0..<limit]) : populationPlanets
                 completion(.success(filteredPlanets))
             } else {
                 completion(.failure(error ?? NSError(domain: "Error retrieving planets", code: 404)))
