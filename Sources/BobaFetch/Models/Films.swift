@@ -13,8 +13,8 @@ struct FilmsRequest: Codable {
 
 // MARK: - Film
 public struct Film: Codable {
-    let title: String
-    let openingCrawl, releaseDate: String
+    public let title: String
+    public let openingCrawl, releaseDate: String
 
     enum CodingKeys: String, CodingKey {
         case title

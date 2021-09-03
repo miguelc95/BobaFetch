@@ -13,7 +13,7 @@ struct PlanetsRequest: Codable {
 
 // MARK: - Result
 public struct Planet: Codable {
-    let name: String
-    let climate: String
-    let population: String
+    public let name: String
+    public let climate: String
+    public let population: String
 }
