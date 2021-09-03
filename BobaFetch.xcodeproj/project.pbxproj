@@ -1,597 +1,558 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3194A56C26E1971C0071E638 /* BobaFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3194A56226E1971C0071E638 /* BobaFetch.framework */; };
-		3194A57126E1971C0071E638 /* BobaFetchEyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */; };
-		3194A57326E1971C0071E638 /* BobaFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3194A56526E1971C0071E638 /* BobaFetch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3194A58026E198870071E638 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57F26E198870071E638 /* Networking.swift */; };
-		3194A58326E1993A0071E638 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58226E1993A0071E638 /* Endpoints.swift */; };
-		3194A58526E1999B0071E638 /* Eyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58426E1999B0071E638 /* Eyes.swift */; };
-		3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58626E199C80071E638 /* BobaFetcher.swift */; };
-		3194A5BA26E1A9720071E638 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5B926E1A9720071E638 /* Planets.swift */; };
-		3194A5BC26E1AC060071E638 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5BB26E1AC060071E638 /* Films.swift */; };
-		3194A5BF26E1BD0C0071E638 /* Films.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5BE26E1BD0C0071E638 /* Films.json */; };
-		3194A5C126E1C3B40071E638 /* Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5C026E1C3B40071E638 /* Eyes.json */; };
-		3194A5C326E1C3F30071E638 /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5C226E1C3F30071E638 /* Planets.json */; };
-		3194A5C526E1C4EE0071E638 /* BobaFetchFilmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */; };
-		3194A5C726E1C63B0071E638 /* BobaFetchPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3194A56D26E1971C0071E638 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3194A55926E1971C0071E638 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3194A56126E1971C0071E638;
-			remoteInfo = BobaFetch;
-		};
-		3194A5AE26E19C290071E638 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3194A59126E19BE70071E638;
-			remoteInfo = BobaFetchDemoApp;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		3194A56226E1971C0071E638 /* BobaFetch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BobaFetch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3194A56526E1971C0071E638 /* BobaFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BobaFetch.h; sourceTree = "<group>"; };
-		3194A56626E1971C0071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3194A56B26E1971C0071E638 /* BobaFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BobaFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchEyesTests.swift; sourceTree = "<group>"; };
-		3194A57226E1971C0071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3194A57F26E198870071E638 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		3194A58226E1993A0071E638 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		3194A58426E1999B0071E638 /* Eyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyes.swift; sourceTree = "<group>"; };
-		3194A58626E199C80071E638 /* BobaFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetcher.swift; sourceTree = "<group>"; };
-		3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BobaFetchDemoApp.xcodeproj; sourceTree = "<group>"; };
-		3194A5B926E1A9720071E638 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
-		3194A5BB26E1AC060071E638 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
-		3194A5BE26E1BD0C0071E638 /* Films.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Films.json; sourceTree = "<group>"; };
-		3194A5C026E1C3B40071E638 /* Eyes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Eyes.json; sourceTree = "<group>"; };
-		3194A5C226E1C3F30071E638 /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
-		3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchFilmsTests.swift; sourceTree = "<group>"; };
-		3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchPlanetsTests.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3194A55F26E1971C0071E638 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3194A56826E1971C0071E638 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3194A56C26E1971C0071E638 /* BobaFetch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		3194A55826E1971C0071E638 = {
-			isa = PBXGroup;
-			children = (
-				3194A56426E1971C0071E638 /* BobaFetch */,
-				3194A56326E1971C0071E638 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		3194A56326E1971C0071E638 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3194A56226E1971C0071E638 /* BobaFetch.framework */,
-				3194A56B26E1971C0071E638 /* BobaFetchTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3194A56426E1971C0071E638 /* BobaFetch */ = {
-			isa = PBXGroup;
-			children = (
-				3194A5C926E1C8330071E638 /* Tests */,
-				3194A5C826E1C8110071E638 /* Source */,
-				3194A5A826E19BFE0071E638 /* DemoApp */,
-			);
-			path = BobaFetch;
-			sourceTree = "<group>";
-		};
-		3194A56F26E1971C0071E638 /* BobaFetchTests */ = {
-			isa = PBXGroup;
-			children = (
-				3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */,
-				3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */,
-				3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */,
-				3194A57226E1971C0071E638 /* Info.plist */,
-			);
-			path = BobaFetchTests;
-			sourceTree = "<group>";
-		};
-		3194A57C26E198520071E638 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3194A58426E1999B0071E638 /* Eyes.swift */,
-				3194A5B926E1A9720071E638 /* Planets.swift */,
-				3194A5BB26E1AC060071E638 /* Films.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3194A57E26E1986C0071E638 /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				3194A57F26E198870071E638 /* Networking.swift */,
-			);
-			path = Workers;
-			sourceTree = "<group>";
-		};
-		3194A58126E1992A0071E638 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				3194A58226E1993A0071E638 /* Endpoints.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		3194A5A826E19BFE0071E638 /* DemoApp */ = {
-			isa = PBXGroup;
-			children = (
-				3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */,
-			);
-			path = DemoApp;
-			sourceTree = "<group>";
-		};
-		3194A5AB26E19C290071E638 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3194A5AF26E19C290071E638 /* BobaFetchDemoApp.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3194A5BD26E1B79B0071E638 /* SampleJsons */ = {
-			isa = PBXGroup;
-			children = (
-				3194A5BE26E1BD0C0071E638 /* Films.json */,
-				3194A5C026E1C3B40071E638 /* Eyes.json */,
-				3194A5C226E1C3F30071E638 /* Planets.json */,
-			);
-			path = SampleJsons;
-			sourceTree = "<group>";
-		};
-		3194A5C826E1C8110071E638 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				3194A58626E199C80071E638 /* BobaFetcher.swift */,
-				3194A56526E1971C0071E638 /* BobaFetch.h */,
-				3194A56626E1971C0071E638 /* Info.plist */,
-				3194A57C26E198520071E638 /* Models */,
-				3194A57E26E1986C0071E638 /* Workers */,
-				3194A58126E1992A0071E638 /* Service */,
-				3194A5BD26E1B79B0071E638 /* SampleJsons */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		3194A5C926E1C8330071E638 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3194A56F26E1971C0071E638 /* BobaFetchTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		3194A55D26E1971C0071E638 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3194A57326E1971C0071E638 /* BobaFetch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		3194A56126E1971C0071E638 /* BobaFetch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3194A57626E1971C0071E638 /* Build configuration list for PBXNativeTarget "BobaFetch" */;
-			buildPhases = (
-				3194A55D26E1971C0071E638 /* Headers */,
-				3194A55E26E1971C0071E638 /* Sources */,
-				3194A55F26E1971C0071E638 /* Frameworks */,
-				3194A56026E1971C0071E638 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BobaFetch;
-			productName = BobaFetch;
-			productReference = 3194A56226E1971C0071E638 /* BobaFetch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3194A56A26E1971C0071E638 /* BobaFetchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3194A57926E1971C0071E638 /* Build configuration list for PBXNativeTarget "BobaFetchTests" */;
-			buildPhases = (
-				3194A56726E1971C0071E638 /* Sources */,
-				3194A56826E1971C0071E638 /* Frameworks */,
-				3194A56926E1971C0071E638 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3194A56E26E1971C0071E638 /* PBXTargetDependency */,
-			);
-			name = BobaFetchTests;
-			productName = BobaFetchTests;
-			productReference = 3194A56B26E1971C0071E638 /* BobaFetchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		3194A55926E1971C0071E638 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
-				TargetAttributes = {
-					3194A56126E1971C0071E638 = {
-						CreatedOnToolsVersion = 12.5.1;
-						LastSwiftMigration = 1250;
-					};
-					3194A56A26E1971C0071E638 = {
-						CreatedOnToolsVersion = 12.5.1;
-					};
-				};
-			};
-			buildConfigurationList = 3194A55C26E1971C0071E638 /* Build configuration list for PBXProject "BobaFetch" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 3194A55826E1971C0071E638;
-			productRefGroup = 3194A56326E1971C0071E638 /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 3194A5AB26E19C290071E638 /* Products */;
-					ProjectRef = 3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				3194A56126E1971C0071E638 /* BobaFetch */,
-				3194A56A26E1971C0071E638 /* BobaFetchTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		3194A5AF26E19C290071E638 /* BobaFetchDemoApp.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = BobaFetchDemoApp.app;
-			remoteRef = 3194A5AE26E19C290071E638 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		3194A56026E1971C0071E638 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3194A5BF26E1BD0C0071E638 /* Films.json in Resources */,
-				3194A5C326E1C3F30071E638 /* Planets.json in Resources */,
-				3194A5C126E1C3B40071E638 /* Eyes.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3194A56926E1971C0071E638 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3194A55E26E1971C0071E638 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3194A58526E1999B0071E638 /* Eyes.swift in Sources */,
-				3194A5BC26E1AC060071E638 /* Films.swift in Sources */,
-				3194A5BA26E1A9720071E638 /* Planets.swift in Sources */,
-				3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */,
-				3194A58326E1993A0071E638 /* Endpoints.swift in Sources */,
-				3194A58026E198870071E638 /* Networking.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3194A56726E1971C0071E638 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3194A5C526E1C4EE0071E638 /* BobaFetchFilmsTests.swift in Sources */,
-				3194A5C726E1C63B0071E638 /* BobaFetchPlanetsTests.swift in Sources */,
-				3194A57126E1971C0071E638 /* BobaFetchEyesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3194A56E26E1971C0071E638 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3194A56126E1971C0071E638 /* BobaFetch */;
-			targetProxy = 3194A56D26E1971C0071E638 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		3194A57426E1971C0071E638 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3194A57526E1971C0071E638 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		3194A57726E1971C0071E638 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 764CCJ2LYX;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BobaFetch/Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mc.BobaFetch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3194A57826E1971C0071E638 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 764CCJ2LYX;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = BobaFetch/Source/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mc.BobaFetch;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		3194A57A26E1971C0071E638 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 764CCJ2LYX;
-				INFOPLIST_FILE = BobaFetchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mc.BobaFetchTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3194A57B26E1971C0071E638 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 764CCJ2LYX;
-				INFOPLIST_FILE = BobaFetchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mc.BobaFetchTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		3194A55C26E1971C0071E638 /* Build configuration list for PBXProject "BobaFetch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3194A57426E1971C0071E638 /* Debug */,
-				3194A57526E1971C0071E638 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3194A57626E1971C0071E638 /* Build configuration list for PBXNativeTarget "BobaFetch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3194A57726E1971C0071E638 /* Debug */,
-				3194A57826E1971C0071E638 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3194A57926E1971C0071E638 /* Build configuration list for PBXNativeTarget "BobaFetchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3194A57A26E1971C0071E638 /* Debug */,
-				3194A57B26E1971C0071E638 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 3194A55926E1971C0071E638 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "BobaFetch::BobaFetch" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_19";
+         buildPhases = (
+            "OBJ_22",
+            "OBJ_24"
+         );
+         dependencies = (
+         );
+         name = "BobaFetch";
+         productName = "BobaFetch";
+         productReference = "BobaFetch::BobaFetch::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "BobaFetch::BobaFetch::Product" = {
+         isa = "PBXFileReference";
+         path = "BobaFetch.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "BobaFetch::BobaFetchPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_32";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_35"
+         );
+         name = "BobaFetchPackageTests";
+         productName = "BobaFetchPackageTests";
+      };
+      "BobaFetch::BobaFetchTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_37";
+         buildPhases = (
+            "OBJ_40",
+            "OBJ_42"
+         );
+         dependencies = (
+            "OBJ_44"
+         );
+         name = "BobaFetchTests";
+         productName = "BobaFetchTests";
+         productReference = "BobaFetch::BobaFetchTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "BobaFetch::BobaFetchTests::Product" = {
+         isa = "PBXFileReference";
+         path = "BobaFetchTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "BobaFetch::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_26";
+         buildPhases = (
+            "OBJ_29"
+         );
+         dependencies = (
+         );
+         name = "BobaFetchPackageDescription";
+         productName = "BobaFetchPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_13";
+         projectDirPath = ".";
+         targets = (
+            "BobaFetch::BobaFetch",
+            "BobaFetch::SwiftPMPackageDescription",
+            "BobaFetch::BobaFetchPackageTests::ProductTarget",
+            "BobaFetch::BobaFetchTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_11"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12"
+         );
+         name = "BobaFetchTests";
+         path = "Tests/BobaFetchTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "BobaFetchTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "BobaFetch::BobaFetch::Product",
+            "BobaFetch::BobaFetchTests::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "BobaFetch";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_20",
+            "OBJ_21"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "BobaFetch.xcodeproj/BobaFetch_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BobaFetch";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "BobaFetch";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_21" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "BobaFetch.xcodeproj/BobaFetch_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "BobaFetch";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "BobaFetch";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_22" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_23"
+         );
+      };
+      "OBJ_23" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_24" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_26" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_27",
+            "OBJ_28"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_27" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk",
+               "-package-description-version",
+               "5.3.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_28" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk",
+               "-package-description-version",
+               "5.3.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_29" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_30"
+         );
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "$(AVAILABLE_PLATFORMS)"
+            );
+            SUPPORTS_MACCATALYST = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_32" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_33",
+            "OBJ_34"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_33" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_34" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_35" = {
+         isa = "PBXTargetDependency";
+         target = "BobaFetch::BobaFetchTests";
+      };
+      "OBJ_37" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_38",
+            "OBJ_39"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_38" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "BobaFetch.xcodeproj/BobaFetchTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "BobaFetchTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_39" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "BobaFetch.xcodeproj/BobaFetchTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "BobaFetchTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Release";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "$(AVAILABLE_PLATFORMS)"
+            );
+            SUPPORTS_MACCATALYST = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_41"
+         );
+      };
+      "OBJ_41" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_42" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_43"
+         );
+      };
+      "OBJ_43" = {
+         isa = "PBXBuildFile";
+         fileRef = "BobaFetch::BobaFetch::Product";
+      };
+      "OBJ_44" = {
+         isa = "PBXTargetDependency";
+         target = "BobaFetch::BobaFetch";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_10",
+            "OBJ_13",
+            "OBJ_16",
+            "OBJ_17"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9"
+         );
+         name = "BobaFetch";
+         path = "Sources/BobaFetch";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "BobaFetch.swift";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = "OBJ_1";
 }
