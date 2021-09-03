@@ -41,7 +41,7 @@ class DemoViewController: UIViewController {
     
     @IBAction func planetsAction(_ sender: Any) {
         activityIndicator.startAnimating()
-        BobbaFetcher.getPlanets(search: getSerchText()) { [weak self] planetsRequest in
+        BobbaFetcher.getPlanets(search: getSerchText(), sample: true) { [weak self] planetsRequest in
             self?.activityIndicator.stopAnimating()
             switch planetsRequest {
             case .failure(let error):

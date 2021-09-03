@@ -14,7 +14,7 @@ class BobaFetchEyesTests: XCTestCase {
         BobbaFetcher.getEyeColors(sample: true) { eyesRequest in
             switch eyesRequest {
             case .success(let eyes):
-                XCTAssertEqual(eyes.count, 5)
+                XCTAssertEqual(eyes.count, 10)
                 XCTAssertEqual(eyes.first?.eyeColor, "blue")
             case .failure(let error):
                 XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving eyes error 404.)")

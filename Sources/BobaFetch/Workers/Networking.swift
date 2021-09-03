@@ -15,14 +15,19 @@ class Network {
             BobaFetch request made 📲.\n
             Endpoint: \(fileLocation) \n
             Method: GET \n
+            Sample: \(sample)
             """)
+        
+        guard !sample else {
+            
+            let bundle =  Bundle(identifier: "BobaFetch")!
+            let decodedData = bundle.decode(T?.self, from: fileLocation.sample)
+            completionHandler(decodedData, nil)
+            return
+        }
             
         if let url = URL(string: fileLocation.endpoint.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") {
-            guard !sample else {
-                let bundle = Bundle(identifier: "com.mc.BobaFetch")
-                completionHandler(bundle?.decode(T.self, from: fileLocation.sample), nil)
-                return
-            }
+           
             var request = URLRequest(url: url)
             
             request.httpMethod = "GET"
