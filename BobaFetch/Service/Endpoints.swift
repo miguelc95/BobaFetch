@@ -11,6 +11,7 @@ public enum Endpoints {
     
     case eyeColor(String?)
     case planets(String?)
+    case films(String?)
     
     var path: String {
         switch self {
@@ -18,6 +19,8 @@ public enum Endpoints {
             return "people"
         case .planets:
             return "planets"
+        case .films:
+            return "films"
         }
     }
     
@@ -34,6 +37,22 @@ public enum Endpoints {
                 return base
             }
             return "\(base)&search=\(searchQuery)"
+        case .films(let searchText):
+        guard let searchQuery = searchText else {
+            return base
+        }
+        return "\(base)&search=\(searchQuery)"
+        }
+    }
+    
+    var sample: String {
+        switch self {
+        case .eyeColor:
+            return "Eyes"
+        case .films:
+            return "Films"
+        case .planets:
+            return "Planets"
         }
     }
     

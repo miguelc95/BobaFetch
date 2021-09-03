@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3194A56C26E1971C0071E638 /* BobaFetch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3194A56226E1971C0071E638 /* BobaFetch.framework */; };
-		3194A57126E1971C0071E638 /* BobaFetchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57026E1971C0071E638 /* BobaFetchTests.swift */; };
+		3194A57126E1971C0071E638 /* BobaFetchEyesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */; };
 		3194A57326E1971C0071E638 /* BobaFetch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3194A56526E1971C0071E638 /* BobaFetch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3194A58026E198870071E638 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A57F26E198870071E638 /* Networking.swift */; };
 		3194A58326E1993A0071E638 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58226E1993A0071E638 /* Endpoints.swift */; };
@@ -16,6 +16,11 @@
 		3194A58726E199C80071E638 /* BobaFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A58626E199C80071E638 /* BobaFetcher.swift */; };
 		3194A5BA26E1A9720071E638 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5B926E1A9720071E638 /* Planets.swift */; };
 		3194A5BC26E1AC060071E638 /* Films.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5BB26E1AC060071E638 /* Films.swift */; };
+		3194A5BF26E1BD0C0071E638 /* Films.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5BE26E1BD0C0071E638 /* Films.json */; };
+		3194A5C126E1C3B40071E638 /* Eyes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5C026E1C3B40071E638 /* Eyes.json */; };
+		3194A5C326E1C3F30071E638 /* Planets.json in Resources */ = {isa = PBXBuildFile; fileRef = 3194A5C226E1C3F30071E638 /* Planets.json */; };
+		3194A5C526E1C4EE0071E638 /* BobaFetchFilmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */; };
+		3194A5C726E1C63B0071E638 /* BobaFetchPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 		3194A56526E1971C0071E638 /* BobaFetch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BobaFetch.h; sourceTree = "<group>"; };
 		3194A56626E1971C0071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3194A56B26E1971C0071E638 /* BobaFetchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BobaFetchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3194A57026E1971C0071E638 /* BobaFetchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchTests.swift; sourceTree = "<group>"; };
+		3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchEyesTests.swift; sourceTree = "<group>"; };
 		3194A57226E1971C0071E638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3194A57F26E198870071E638 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		3194A58226E1993A0071E638 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		3194A5AA26E19C290071E638 /* BobaFetchDemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BobaFetchDemoApp.xcodeproj; sourceTree = "<group>"; };
 		3194A5B926E1A9720071E638 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 		3194A5BB26E1AC060071E638 /* Films.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Films.swift; sourceTree = "<group>"; };
+		3194A5BE26E1BD0C0071E638 /* Films.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Films.json; sourceTree = "<group>"; };
+		3194A5C026E1C3B40071E638 /* Eyes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Eyes.json; sourceTree = "<group>"; };
+		3194A5C226E1C3F30071E638 /* Planets.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Planets.json; sourceTree = "<group>"; };
+		3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchFilmsTests.swift; sourceTree = "<group>"; };
+		3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaFetchPlanetsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3194A56426E1971C0071E638 /* BobaFetch */,
+				3194A5A826E19BFE0071E638 /* DemoApp */,
 				3194A56F26E1971C0071E638 /* BobaFetchTests */,
 				3194A56326E1971C0071E638 /* Products */,
 			);
@@ -91,7 +102,7 @@
 		3194A56426E1971C0071E638 /* BobaFetch */ = {
 			isa = PBXGroup;
 			children = (
-				3194A5A826E19BFE0071E638 /* DemoApp */,
+				3194A5BD26E1B79B0071E638 /* SampleJsons */,
 				3194A58126E1992A0071E638 /* Service */,
 				3194A57E26E1986C0071E638 /* Workers */,
 				3194A57C26E198520071E638 /* Models */,
@@ -105,7 +116,9 @@
 		3194A56F26E1971C0071E638 /* BobaFetchTests */ = {
 			isa = PBXGroup;
 			children = (
-				3194A57026E1971C0071E638 /* BobaFetchTests.swift */,
+				3194A57026E1971C0071E638 /* BobaFetchEyesTests.swift */,
+				3194A5C426E1C4EE0071E638 /* BobaFetchFilmsTests.swift */,
+				3194A5C626E1C63B0071E638 /* BobaFetchPlanetsTests.swift */,
 				3194A57226E1971C0071E638 /* Info.plist */,
 			);
 			path = BobaFetchTests;
@@ -151,6 +164,16 @@
 				3194A5AF26E19C290071E638 /* BobaFetchDemoApp.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3194A5BD26E1B79B0071E638 /* SampleJsons */ = {
+			isa = PBXGroup;
+			children = (
+				3194A5BE26E1BD0C0071E638 /* Films.json */,
+				3194A5C026E1C3B40071E638 /* Eyes.json */,
+				3194A5C226E1C3F30071E638 /* Planets.json */,
+			);
+			path = SampleJsons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3194A5BF26E1BD0C0071E638 /* Films.json in Resources */,
+				3194A5C326E1C3F30071E638 /* Planets.json in Resources */,
+				3194A5C126E1C3B40071E638 /* Eyes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +317,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3194A57126E1971C0071E638 /* BobaFetchTests.swift in Sources */,
+				3194A5C526E1C4EE0071E638 /* BobaFetchFilmsTests.swift in Sources */,
+				3194A5C726E1C63B0071E638 /* BobaFetchPlanetsTests.swift in Sources */,
+				3194A57126E1971C0071E638 /* BobaFetchEyesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

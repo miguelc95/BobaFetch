@@ -7,4 +7,18 @@
 
 import Foundation
 
+struct FilmsRequest: Codable {
+    let results: [Film]
+}
 
+// MARK: - Film
+public struct Film: Codable {
+    let title: String
+    let openingCrawl, releaseDate: String
+
+    enum CodingKeys: String, CodingKey {
+        case title
+        case openingCrawl = "opening_crawl"
+        case releaseDate = "release_date"
+    }
+}

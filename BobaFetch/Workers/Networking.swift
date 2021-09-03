@@ -7,6 +7,36 @@
 
 import Foundation
 
+extension Bundle {
+    func decode<T: Decodable>(_ type: T.Type, from file: String, dateDecodingStrategy: JSONDecoder.DateDecodingStrategy = .deferredToDate, keyDecodingStrategy: JSONDecoder.KeyDecodingStrategy = .useDefaultKeys) -> T {
+        guard let url = self.url(forResource: file, withExtension: "json") else {
+            fatalError("Failed to locate \(file) in bundle.")
+        }
+
+        guard let data = try? Data(contentsOf: url) else {
+            fatalError("Failed to load \(file) from bundle.")
+        }
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = dateDecodingStrategy
+        decoder.keyDecodingStrategy = keyDecodingStrategy
+
+        do {
+            return try decoder.decode(T.self, from: data)
+        } catch DecodingError.keyNotFound(let key, let context) {
+            fatalError("Failed to decode \(file) from bundle due to missing key '\(key.stringValue)' not found – \(context.debugDescription)")
+        } catch DecodingError.typeMismatch(_, let context) {
+            fatalError("Failed to decode \(file) from bundle due to type mismatch – \(context.debugDescription)")
+        } catch DecodingError.valueNotFound(let type, let context) {
+            fatalError("Failed to decode \(file) from bundle due to missing \(type) value – \(context.debugDescription)")
+        } catch DecodingError.dataCorrupted(_) {
+            fatalError("Failed to decode \(file) from bundle because it appears to be invalid JSON")
+        } catch {
+            fatalError("Failed to decode \(file) from bundle: \(error.localizedDescription)")
+        }
+    }
+}
+
 extension Dictionary {
     func percentEncoded() -> Data? {
         return map { key, value in
@@ -40,34 +70,24 @@ enum method : String {
 }
 
 class Network {
-    static func getExternalData<T: Decodable>(fileLocation: Endpoints, method: method, parameters : [String: Any]?, stringParameters: String?, completionHandler: @escaping (T?, Error?) -> Void){
+    static func getExternalData<T: Decodable>(fileLocation: Endpoints, sample: Bool = false, completionHandler: @escaping (T?, Error?) -> Void){
 
         print("""
             \n
             BobaFetch request made 📲.\n
             Endpoint: \(fileLocation) \n
-            Method: \(method.rawValue) \n
+            Method: GET \n
             """)
             
         if let url = URL(string: fileLocation.endpoint.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") {
+            guard !sample else {
+                let bundle = Bundle(identifier: "com.mc.BobaFetch")
+                completionHandler(bundle?.decode(T.self, from: fileLocation.sample), nil)
+                return
+            }
             var request = URLRequest(url: url)
             
-            request.httpMethod = method.rawValue
-            request.httpBody = parameters?.percentEncoded()
-
-            if method == .post {
-                
-                request.setValue("application/json; charset=utf-8",
-                     forHTTPHeaderField: "Content-Type")
-                request.setValue("application/json; charset=utf-8",
-                     forHTTPHeaderField: "Content-Type")
-
-                if let parameters = parameters {
-                    request.httpBody = try? JSONSerialization.data(withJSONObject: parameters)
-                } else if let stringParameters = stringParameters {
-                    request.httpBody = stringParameters.data(using: String.Encoding.utf8)
-                }
-            }
+            request.httpMethod = "GET"
             
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 200

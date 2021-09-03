@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct PeopleRequest: Codable {
+struct PeopleRequest: Codable {
     let results: [Eyes]
 }
 

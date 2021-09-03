@@ -52,7 +52,6 @@
                     <state key="normal" title="Films"/>
                     <connections>
                         <action selector="filmsAction:" destination="-1" eventType="touchUpInside" id="3gZ-bh-MNt"/>
-                        <action selector="planetsAction:" destination="-1" eventType="touchUpInside" id="NmC-91-h4v"/>
                     </connections>
                 </button>
             </subviews>

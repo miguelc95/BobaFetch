@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct PlanetsRequest: Codable {
+struct PlanetsRequest: Codable {
     let results: [Planet]
 }
 
