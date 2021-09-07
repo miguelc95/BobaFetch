@@ -12,7 +12,18 @@ import Foundation
  */
 
 public class BobbaFetcher {
-    
+    /// This function returns an array of characters which contain  their `name` and their `eye color`.
+    ///
+    /// ```
+    /// {"name":"C-3PO","eye_color":"yellow"}
+    /// ```
+    ///
+    /// - Warning: Returns in a completion handler a Swift Result with the array or a BobaFetchError
+    /// - Parameter limit: The amount of characters wanted to be returned.
+    /// - Parameter search: A search string to query results.
+    /// - Parameter sample: This variable allows us to test with a JSON.
+
+    /// - Returns: completion handler a Swift Result with the array or a BobaFetchError `Swift.Result<[Eyes], BobaFetchError>`.
     public static func getEyeColors(limit: Int = 5,search: String? = nil, sample: Bool = false, completion: @escaping (Swift.Result<[Eyes], BobaFetchError>) -> Void) {
         Network.getExternalData(fileLocation: .eyeColor(search), sample: sample) { (result: Swift.Result<PeopleRequest?,BobaFetchError>) in
             switch result {
@@ -27,6 +38,18 @@ public class BobbaFetcher {
         }
     }
     
+    /// This function returns an array of Planets which contain  their `name`,`climate` and `Population`.
+    ///
+    /// ```
+    /// {"name":"Tatooine","climate":"arid", "population":"200000 }
+    /// ```
+    ///
+    /// - Warning: Returns in a completion handler a Swift Result with the array or a BobaFetchError
+    /// - Parameter limit: The amount of characters wanted to be returned.
+    /// - Parameter search: A search string to query results.
+    /// - Parameter sample: This variable allows us to test with a JSON.
+
+    /// - Returns: completion handler a Swift Result with the array or a BobaFetchError `Swift.Result<[Planet], BobaFetchError>`.
     public static func getPlanets(limit: Int = 5,search: String? = nil, sample:Bool = false, completion: @escaping (Swift.Result<[Planet], BobaFetchError>) -> Void) {
         Network.getExternalData(fileLocation: .planets(search)) { (result: Swift.Result<PlanetsRequest?,BobaFetchError>) in
             switch result {
@@ -42,6 +65,17 @@ public class BobbaFetcher {
         }
     }
     
+    /// This function returns an array of Films which contain their `title`,`opening crawl` and `release date`.
+    ///
+    /// ```
+    /// {"title":"A new hope","open_crawl":"_", "release_date":"1977-05-25 }
+    /// ```
+    ///
+    /// - Warning: Returns in a completion handler a Swift Result with the array or a BobaFetchError
+    /// - Parameter search: A search string to query results.
+    /// - Parameter sample: This variable allows us to test with a JSON.
+
+    /// - Returns: completion handler a Swift Result with the array or a BobaFetchError `Swift.Result<[Film], BobaFetchError>`.
     public static func getFilms(search: String? = nil, sample: Bool = false, completion: @escaping (Swift.Result<[Film], BobaFetchError>) -> Void) {
         Network.getExternalData(fileLocation: .films(search), sample: sample) { (result: Swift.Result<FilmsRequest?,BobaFetchError>) in
             switch result {
