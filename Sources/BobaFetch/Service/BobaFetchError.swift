@@ -16,6 +16,14 @@ public enum BobaFetchError: LocalizedError {
 }
 
 extension BobaFetchError: CustomStringConvertible {
+    /// BobaFetchError has a descriptive error for the things that may go wrong when using BobaFetch.
+    ///
+    /// ```
+    /// invalidURL,retrievalError, decodingError
+    /// ```
+    ///
+    /// - Warning: Not yet localized, TODO
+    
     public var description: String {
         switch self {
         case .invalidURL:
