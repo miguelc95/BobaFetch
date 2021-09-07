@@ -14,7 +14,7 @@ class BobaFetchEyesTests: XCTestCase {
         BobbaFetcher.getEyeColors(sample: true) { eyesRequest in
             switch eyesRequest {
             case .success(let eyes):
-                XCTAssertEqual(eyes.count, 10)
+                XCTAssertEqual(eyes.count, 5)
                 XCTAssertEqual(eyes.first?.eyeColor, "blue")
             case .failure(let error):
                 XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving eyes error 404.)")
@@ -23,11 +23,11 @@ class BobaFetchEyesTests: XCTestCase {
     }
     
     func testAmountEyes() throws {
-        BobbaFetcher.getEyeColors(limit: 10, sample: true) { eyesRequest in
+        BobbaFetcher.getEyeColors(limit: 8, sample: true) { eyesRequest in
             switch eyesRequest {
             case .success(let eyes):
-                XCTAssertEqual(eyes.count, 10)
-                XCTAssertEqual(eyes.last?.eyeColor, "blue-gray")
+                XCTAssertEqual(eyes.count, 8)
+                XCTAssertEqual(eyes.last?.eyeColor, "red")
             case .failure(let error):
                 XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (Error retrieving eyes error 404.)")
             }

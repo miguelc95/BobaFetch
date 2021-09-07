@@ -18,7 +18,7 @@ public class BobbaFetcher {
             switch result {
             case .success(let people):
                 if let eyes = people?.results {
-                    let filteredEyes = eyes.count > limit && eyes.count < limit ? Array(eyes[0..<limit]) : eyes
+                    let filteredEyes = eyes.count > limit ? Array(eyes[0..<limit]) : eyes
                     completion(.success(filteredEyes))
                 }
             case .failure(let error):
