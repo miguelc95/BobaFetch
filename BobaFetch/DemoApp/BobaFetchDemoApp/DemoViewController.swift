@@ -29,12 +29,11 @@ class DemoViewController: UIViewController {
     @IBAction func eyeColorAction(_ sender: Any) {
         activityIndicator.startAnimating()
         BobbaFetcher.getEyeColors(search: getSerchText()) { [weak self] eyesRequest in
-            self?.activityIndicator.stopAnimating()
             switch eyesRequest {
             case .failure(let error):
-                self?.displayResponse(message: error.localizedDescription, title: "Error")            case .success(let eyes):
-                    print(eyes)
-                    self?.displayResponse(message: eyes.description, title: "Eyes")
+                self?.displayResponse(message: error.description, title: "Error")
+            case .success(let eyes):
+                self?.displayResponse(message: eyes.description, title: "Eyes")
             }
         }
     }
@@ -42,12 +41,11 @@ class DemoViewController: UIViewController {
     @IBAction func planetsAction(_ sender: Any) {
         activityIndicator.startAnimating()
         BobbaFetcher.getPlanets(search: getSerchText(), sample: true) { [weak self] planetsRequest in
-            self?.activityIndicator.stopAnimating()
             switch planetsRequest {
             case .failure(let error):
-                self?.displayResponse(message: error.localizedDescription, title: "Error")
+                self?.displayResponse(message: error.description, title: "Error")
             case .success(let planets):
-                    self?.displayResponse(message: planets.description, title: "Planets")
+                self?.displayResponse(message: planets.description, title: "Planets")
             }
         }
     }
@@ -55,10 +53,9 @@ class DemoViewController: UIViewController {
     @IBAction func filmsAction(_ sender: Any) {
         activityIndicator.startAnimating()
         BobbaFetcher.getFilms(search: getSerchText()) { [weak self] planetsRequest in
-            self?.activityIndicator.stopAnimating()
             switch planetsRequest {
             case .failure(let error):
-                self?.displayResponse(message: error.localizedDescription, title: "Error")
+                self?.displayResponse(message: error.description, title: "Error")
             case .success(let films):
                 self?.displayResponse(message: films.description, title: "Films")
             }
@@ -71,9 +68,10 @@ class DemoViewController: UIViewController {
     }
     
     private func displayResponse(message: String, title: String = "") {
-        let alert = UIAlertController(title: title, message: message , preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
             self.present(alert, animated: true)
         }
     }

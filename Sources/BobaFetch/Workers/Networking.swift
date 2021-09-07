@@ -8,7 +8,7 @@
 import Foundation
 
 class Network {
-    static func getExternalData<T: Decodable>(fileLocation: Endpoints, sample: Bool = false, completionHandler: @escaping (T?, Error?) -> Void){
+    static func getExternalData<T: Decodable>(fileLocation: Endpoints, sample: Bool = false, completionHandler: @escaping (Swift.Result<T?, BobaFetchError>) -> Void){
 
         print("""
             \n
@@ -22,11 +22,14 @@ class Network {
             
             let bundle =  Bundle(identifier: "BobaFetch")!
             let decodedData = bundle.decode(T?.self, from: fileLocation.sample)
-            completionHandler(decodedData, nil)
+            completionHandler(.success(decodedData))
             return
         }
             
-        if let url = URL(string: fileLocation.endpoint.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") {
+        guard let url = URL(string: fileLocation.endpoint.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed) ?? "") else {
+            return
+                completionHandler(.failure(.invalidURL))
+        }
            
             var request = URLRequest(url: url)
             
@@ -35,13 +38,9 @@ class Network {
             let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
                 let statusCode = (response as? HTTPURLResponse)?.statusCode ?? 200
                 print("Status code: \(statusCode)")
-
-                if error != nil {
-                    completionHandler(nil, error)
-                }
                 
-                if statusCode != 200 {
-                    completionHandler(nil, error)
+                if error != nil, statusCode != 200 {
+                    completionHandler(.failure(.retrievalError))
                 }
                 
                 do {
@@ -64,19 +63,15 @@ class Network {
                                                 }
                         let typedObject: T? = try decoder.decode(T.self, from: jsonData)
                         DispatchQueue.main.async {
-                            completionHandler(typedObject, nil)
+                            completionHandler(.success(typedObject))
                         }
                     }
                 } catch {
-                    completionHandler(nil, error)
+                    completionHandler(.failure(.decodingError))
                 }
             }
             
             task.resume()
-        } else {
-            completionHandler(nil, NSError(domain: "Url does not exist", code: 1001, userInfo: nil))
         }
-        
-    }
 }
 
